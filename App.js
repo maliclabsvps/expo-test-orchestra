@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text testID="hello-text">Hello, Orchestra!</Text>
+      <Text testID="future-text" style={styles.futureText}>This is the future</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +17,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  futureText: {
+    color: 'green',
+    marginTop: 8,
   },
 });
